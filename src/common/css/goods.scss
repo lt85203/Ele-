@@ -1,0 +1,74 @@
+@function rem($px) {
+  @return $px/46.375+rem;
+}
+
+.goods {
+  .top {
+    overflow: hidden;
+    .left {
+      //border: 1px solid #000;
+      width: rem(203);
+      text-align: center;
+      float: left;
+      padding: rem(36);
+      .words {
+        padding-right: rem(25);
+        border-right: 1px solid lightgray;
+        p {
+          font-size: rem(48);
+          color: rgb(255, 153, 0);
+          line-height: rem(56);
+        }
+        h2 {
+          font-size: rem(24);
+          color: rgb(7, 17, 27);
+          line-height: 2;
+        }
+        h1 {
+          font-size: rem(20);
+          color: rgb(157, 162, 168);
+          line-height: 1.5;
+        }
+      }
+    }
+    .right {
+      float: right;
+      //border: 1px solid red;
+      width: rem(366);
+      padding-left: rem(48);
+      padding-right: rem(48);
+      ul {
+        margin-left: rem(-50);
+        margin-top: rem(15);
+        li {
+          position: relative;
+          font-size: rem(24);
+          padding-top: rem(16);
+          span {
+            line-height: rem(36);
+          }
+          .star {
+            float: right;
+            position: relative;
+            right: 38%;
+          }
+          .evaluate {
+            float: right;
+            color: rgb(255, 153, 0);
+            font-size: rem(24);
+            line-height: 1.5;
+            position: relative;
+            left: rem(24);
+            top: rem(-8);
+          }
+          .time {
+            font-size: rem(24);
+            color: rgb(147, 153, 159);
+            line-height: rem(36);
+            margin-left: rem(20);
+          }
+        }
+      }
+    }
+  }
+}
